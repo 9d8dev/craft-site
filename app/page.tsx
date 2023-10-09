@@ -31,8 +31,8 @@ export default function Home() {
       <h1 className="text-4xl">Welcome to Craft UI</h1>
       <div className="grid md:grid-cols-3 gap-4">
         {components.map((component, index) => (
-          <div key={index} className="bg-gray-100 p-4 rounded-lg">
-            <h2 className="text-2xl my-4">{component.name}</h2>
+          <div key={index} className="bg-gray-100 grid gap-6 p-4 rounded-lg">
+            <h2 className="text-2xl">{component.name}</h2>
             <p className="text-gray-500">{component.description}</p>
             <DrawerWrapper name={component.name}>
               <component.component />

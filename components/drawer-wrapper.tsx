@@ -12,7 +12,7 @@ const DrawerWrapper: React.FC<Props> = ({ children, name }) => {
   return (
     <Drawer.Root>
       <Drawer.Trigger asChild>
-        <button className="bg-slate-200 px-2 py-1 border rounded-lg">
+        <button className="bg-neutral-200 dark:bg-neutral-500 px-2 py-1 rounded-lg">
           View Component
         </button>
       </Drawer.Trigger>

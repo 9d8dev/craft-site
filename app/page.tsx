@@ -28,12 +28,12 @@ const components = [
 export default function Home() {
   return (
     <main className="grid md:gap-12 gap-6">
-      <h1 className="text-4xl">Welcome to Craft UI</h1>
+      <h1 className="text-4xl font-serif italic">Welcome to Craft UI</h1>
       <div className="grid md:grid-cols-3 gap-4">
         {components.map((component, index) => (
-          <div key={index} className="bg-gray-100 grid gap-6 p-4 rounded-lg">
+          <div key={index} className="bg-neutral-100 dark:bg-neutral-600 grid gap-6 p-4 rounded-lg">
             <h2 className="text-2xl">{component.name}</h2>
-            <p className="text-gray-500">{component.description}</p>
+            <p className="dark:text-neutral-400 text-neutral-500">{component.description}</p>
             <DrawerWrapper name={component.name}>
               <component.component />
             </DrawerWrapper>

@@ -16,7 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="w-screen dark:bg-neutral-700 dark:text-neutral-50 font-light" lang="en">
+    <html
+      className="w-screen dark:bg-neutral-700 dark:text-neutral-50 font-light"
+      lang="en"
+    >
       <body className={`p-6 md:p-12 max-w-screen-2xl ${inter.className}`}>
         {children}
       </body>

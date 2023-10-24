@@ -3,13 +3,14 @@ import DrawerWrapper from "@/app/drawer-wrapper";
 import Image from "next/image";
 
 // Hero Components
-import One from "@/components/type/hero/one";
+import One from "@/app/components/type/hero/one";
 
 const components = [
   {
     name: "First Component",
     type: "Hero",
     component: One,
+    componentCode: "Working on this.",
     description:
       "This is a test component for the setup of the Craft UI library",
   },
@@ -17,6 +18,7 @@ const components = [
     name: "Second Component",
     type: "Hero",
     component: One,
+    componentCode: "Working on this.",
     description:
       "This is a test component for the setup of the Craft UI library",
   },
@@ -24,6 +26,7 @@ const components = [
     name: "Third Component",
     type: "Hero",
     component: One,
+    componentCode: "Working on this.",
     description:
       "This is a test component for the setup of the Craft UI library",
   },
@@ -39,6 +42,7 @@ const ComponentGrid = () => {
             key={index}
             name={component.name}
             component={<Component />}
+            componentCode={component.componentCode}
           >
             <div className="bg-neutral-100 dark:bg-neutral-600 grid gap-6 p-4 rounded-lg">
               <div className="relative h-48">

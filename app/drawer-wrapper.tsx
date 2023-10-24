@@ -5,6 +5,7 @@ import { Drawer } from "vaul";
 import { X } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import CopyButton from "./copy-button";
 
 type Props = {
   children: React.ReactNode;
@@ -21,7 +22,7 @@ const DrawerWrapper: React.FC<Props> = ({
 }) => {
   return (
     <Drawer.Root>
-      <Drawer.Trigger asChild id={name}>
+      <Drawer.Trigger asChild>
         <button className="flex w-fit gap-px group hover:-mt-1 hover:mb-1 hover:shadow-md transition-all">
           {children}
         </button>
@@ -34,7 +35,7 @@ const DrawerWrapper: React.FC<Props> = ({
             <div className="max-w-6xl mx-auto">
               <Drawer.Title className="font-medium mb-4">{name}</Drawer.Title>
               {/* Fake Browser Window */}
-              <div className="rounded-lg ring-4 ring-neutral-400 ring-offset-neutral-400 overflow-hidden flex flex-col">
+              <div className="rounded-lg overflow-hidden flex flex-col">
                 {/* Fake Browser Top Bar */}
                 <div className="h-8 bg-neutral-500 flex justify-between items-center px-2">
                   <div className="flex gap-1">
@@ -47,17 +48,21 @@ const DrawerWrapper: React.FC<Props> = ({
                 <div className="h-[560px]">{component}</div>
               </div>
               {/* Component Code */}
-              <div className="mt-12 rounded-lg overflow-hidden bg-neutral-600">
+              <div className="mt-12 rounded-lg relative overflow-hidden bg-neutral-600">
                 {/* Fake Code Editor Top Bar */}
-                <div className="h-8 flex justify-between items-center px-2">
-                  <div className="flex gap-1">
+                <div className="h-6 flex justify-between items-center px-2">
+                  <div className="flex gap-1 mt-2">
                     <div className="bg-neutral-400 h-3 w-3 rounded-3xl"></div>
                     <div className="bg-neutral-400 h-3 w-3 rounded-3xl"></div>
                     <div className="bg-neutral-400 h-3 w-3 rounded-3xl"></div>
                   </div>
-                  <X className="h-5 text-neutral-400" />
                 </div>
-                <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
+                <CopyButton textToCopy={componentCode} />
+                <SyntaxHighlighter
+                  language="tsx"
+                  style={vscDarkPlus}
+                  showLineNumbers
+                >
                   {componentCode}
                 </SyntaxHighlighter>
               </div>

@@ -1,5 +1,5 @@
 // Layout Components
-import DrawerWrapper from "@/components/drawer-wrapper";
+import DrawerWrapper from "@/app/drawer-wrapper";
 import Image from "next/image";
 
 // Hero Components

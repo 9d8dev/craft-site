@@ -21,7 +21,7 @@ const DrawerWrapper: React.FC<Props> = ({
   componentCode,
 }) => {
   return (
-    <Drawer.Root className="outline-none">
+    <Drawer.Root>
       <Drawer.Trigger asChild>
         <button className="flex w-fit gap-px group hover:-mt-1 hover:mb-1 outline-none transition-all">
           {children}

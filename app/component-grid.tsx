@@ -77,7 +77,8 @@ const ComponentGrid = () => {
             component={<Component />}
             componentCode={componentCode}
           >
-            <div className="bg-neutral-100 dark:bg-neutral-600 grid gap-6 p-4 rounded-lg">
+            {/* Component Card */}
+            <div className="bg-neutral-100 focus:ring-0 dark:bg-neutral-600 grid gap-6 p-4 rounded-lg">
               <div className="relative h-48">
                 <Image
                   src="/placeholder.jpg"

@@ -63,24 +63,26 @@ const Two = () => {
             <h3 className="text-xl opacity-60">
               Craft UI is the NextJS component library for marketing sites.
             </h3>
-            <form className="mt-4 w-3/4 flex items-center gap-2 h-fit m-auto">
-              <label htmlFor="email" className="sr-only">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 "
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                className="px-4 py-2 hover:opacity-90 focus:scale-105 bg-neutral-600 border border-neutral-600 text-white"
-              >
-                Subscribe
-              </button>
-            </form>
-            <p className="text-xs opacity-75">Sign up now. No spam ever.</p>
+            <div className="grid gap-2">
+              <form className="mt-4 w-3/4 flex items-center gap-2 h-fit m-auto">
+                <label htmlFor="email" className="sr-only">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full px-4 py-2 "
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 hover:opacity-90 focus:scale-105 bg-neutral-600 border border-neutral-600 text-white"
+                >
+                  Subscribe
+                </button>
+              </form>
+              <p className="text-xs opacity-75">Sign up now. No spam ever.</p>
+            </div>
           </div>
           <div className="overflow-hidden h-full">
             <Image

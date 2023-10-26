@@ -1,42 +1,34 @@
+"use client";
+
 import React from "react";
-import { Copy, Check } from "lucide-react";
+import { Copy } from "lucide-react";
+import { toast } from "sonner";
 
 type CopyButtonProps = {
   textToCopy: string;
+  className?: string;
 };
 
-const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy }) => {
+const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, className }) => {
   const [copyStatus, setCopyStatus] = React.useState(
     <>
-      <span className="text-sm mr-1">Copy Code</span>
+      <span className="mr-1 text-sm">Copy Code</span>
       <Copy className="w-4" />
     </>
   );
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(textToCopy);
-    setCopyStatus(
-      <>
-        <span className="text-sm mr-1">Copied!</span>
-        <Check className="w-4" />{" "}
-      </>
-    );
-    setTimeout(
-      () =>
-        setCopyStatus(
-          <>
-            <span className="text-sm mr-1">Copy Code</span>
-            <Copy className="w-4" />
-          </>
-        ),
-      2000
-    );
+    toast.success("Code Copied to Clipboard");
   };
 
   return (
     <button
-      className="absolute top-0 right-0 m-4 min-w-30 h-8 px-2 py-1 cursor-pointer bg-neutral-500 rounded-md hover:scale-95 focus:scale-110 transition-all flex items-center justify-center gap-1"
-      onClick={handleCopy}
+      className={`min-w-30 absolute right-0 top-0 m-4 flex h-8 cursor-pointer items-center justify-center gap-1 rounded-md bg-neutral-500 px-2 py-1 transition-all hover:scale-95 focus:scale-110 ${className}`}
+      onClick={(e) => {
+        handleCopy();
+        e.stopPropagation();
+      }}
     >
       {copyStatus}
     </button>

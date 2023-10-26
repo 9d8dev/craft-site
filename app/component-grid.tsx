@@ -1,6 +1,7 @@
 // Layout Components
 import DrawerWrapper from "@/app/drawer-wrapper";
 import Image from "next/image";
+import CopyButton from "./copy-button";
 
 // Craft Components
 import One from "@/app/components/type/hero/one";
@@ -66,7 +67,7 @@ const components = [
 
 const ComponentGrid = () => {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
       {components.map((component, index) => {
         const Component = component.component;
         const componentCode = component.componentCode;
@@ -78,8 +79,8 @@ const ComponentGrid = () => {
             componentCode={componentCode}
           >
             {/* Component Card */}
-            <div className="bg-neutral-100 focus:ring-0 dark:bg-neutral-600 grid gap-6 p-4 rounded-lg">
-              <div className="relative h-48">
+            <div className="grid gap-4 rounded-lg bg-neutral-100 p-4 focus:ring-0 dark:bg-neutral-600">
+              <div className="relative h-48 group">
                 <Image
                   src="/placeholder.jpg"
                   fill
@@ -87,14 +88,18 @@ const ComponentGrid = () => {
                   objectFit="cover"
                   className="rounded-md"
                 />
+                <CopyButton
+                  className="group-hover:flex hidden z-50"
+                  textToCopy={componentCode}
+                />
               </div>
-              <h2 className="text-2xl">
+              <h2 className="m-auto flex items-baseline gap-2 text-2xl">
                 {component.name}
                 <small className="text-xs text-neutral-200 dark:text-neutral-400">
                   {component.type}
                 </small>
               </h2>
-              <p className="dark:text-neutral-400 text-neutral-500">
+              <p className="m-auto w-3/4 text-neutral-500 dark:text-neutral-400">
                 {component.description}
               </p>
             </div>

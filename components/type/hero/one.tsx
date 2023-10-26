@@ -29,7 +29,12 @@ const One = () => {
         </div>
       </div>
       <div className="overflow-hidden">
-        <Image objectFit="cover" src={Placeholder} alt=""></Image>
+        <Image
+          objectFit="cover"
+          src={Placeholder}
+          alt=""
+          placeholder="blur"
+        ></Image>
       </div>
       <div className="flex gap-2 items-center">
         <p>Scroll to See More </p>

@@ -51,6 +51,7 @@ const Two = () => {
               src={Placeholder}
               className="h-full"
               alt=""
+              placeholder="blur"
             ></Image>
           </div>
           <div className="text-center grid gap-8 py-12">
@@ -88,6 +89,7 @@ const Two = () => {
               src={Placeholder}
               className="h-full"
               alt=""
+              placeholder="blur"
             ></Image>
           </div>
         </div>

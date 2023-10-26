@@ -2,68 +2,7 @@
 import DrawerWrapper from "@/app/drawer-wrapper";
 import Image from "next/image";
 import CopyButton from "./copy-button";
-
-// Craft Components
-import One from "@/app/components/type/hero/one";
-import Two from "@/app/components/type/hero/two";
-import Three from "@/app/components/type/hero/three";
-
-// Import Code
-import oneCode from "!!raw-loader!@/app/components/type/hero/one";
-import twoCode from "!!raw-loader!@/app/components/type/hero/two";
-import threeCode from "!!raw-loader!@/app/components/type/hero/three";
-
-// Components Config
-const components = [
-  {
-    name: "First Component",
-    type: "Hero",
-    component: One,
-    componentCode: oneCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "Second Component",
-    type: "Hero",
-    component: Two,
-    componentCode: twoCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "Third Component",
-    type: "Hero",
-    component: Three,
-    componentCode: threeCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "First Component",
-    type: "Hero",
-    component: One,
-    componentCode: oneCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "Second Component",
-    type: "Hero",
-    component: Two,
-    componentCode: twoCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "Third Component",
-    type: "Hero",
-    component: Three,
-    componentCode: threeCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-];
+import { components } from "@/component.config";
 
 const ComponentGrid = () => {
   return (

@@ -33,28 +33,4 @@ export const components = [
     description:
       "This is a test component for the setup of the Craft UI library",
   },
-  {
-    name: "First Component",
-    type: "Hero",
-    component: One,
-    componentCode: oneCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "Second Component",
-    type: "Hero",
-    component: Two,
-    componentCode: twoCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
-  {
-    name: "Third Component",
-    type: "Hero",
-    component: Three,
-    componentCode: threeCode,
-    description:
-      "This is a test component for the setup of the Craft UI library",
-  },
 ];

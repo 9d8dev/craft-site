@@ -6,8 +6,8 @@ import Placeholder from "@/public/placeholder.jpg";
 
 const Two = () => {
   return (
-    <section className="h-screen w-screen max-w-full flex items-center justify-center gap-8 max-h-[1080px] dark:text-white bg-neutral-100 dark:bg-neutral-800">
-      <nav className="w-full fixed top-0 p-8 grid items-center grid-cols-[1fr,2fr,1fr]">
+    <section className="h-screen w-screen relative max-w-full flex items-center justify-center gap-8 max-h-[1080px] dark:text-white bg-neutral-100 dark:bg-neutral-800">
+      <nav className="w-full absolute top-0 p-8 grid items-center grid-cols-[1fr,2fr,1fr]">
         <Link href="#" className="text-xl font-light">
           Two
         </Link>

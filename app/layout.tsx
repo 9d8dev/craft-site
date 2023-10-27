@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className="w-screen dark:bg-neutral-700 dark:text-neutral-50 font-light"
+      className="w-screen dark:bg-neutral-800 dark:text-neutral-50 font-light"
       lang="en"
     >
       <Toaster position="bottom-center" />

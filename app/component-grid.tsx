@@ -18,7 +18,7 @@ const ComponentGrid = () => {
             componentCode={componentCode}
           >
             {/* Component Card */}
-            <div className="grid gap-4 rounded-lg bg-neutral-100 p-4 focus:ring-0 dark:bg-neutral-600">
+            <div className="grid gap-4 rounded-lg focus:ring-0">
               <div className="relative h-48 group">
                 <Image
                   src="/placeholder.jpg"
@@ -32,15 +32,17 @@ const ComponentGrid = () => {
                   textToCopy={componentCode}
                 />
               </div>
-              <h2 className="m-auto flex items-baseline gap-2 text-2xl">
-                {component.name}
-                <small className="text-xs text-neutral-200 dark:text-neutral-400">
-                  {component.type}
-                </small>
-              </h2>
-              <p className="m-auto w-3/4 text-neutral-500 dark:text-neutral-400">
-                {component.description}
-              </p>
+              <div className="rounded-lg grid gap-4 p-4 bg-neutral-100 dark:bg-neutral-700">
+                <h2 className="m-auto flex items-baseline gap-2 text-2xl">
+                  {component.name}
+                  <small className="text-xs text-neutral-200 dark:text-neutral-400">
+                    {component.type}
+                  </small>
+                </h2>
+                <p className="m-auto w-3/4 text-neutral-500 dark:text-neutral-400">
+                  {component.description}
+                </p>
+              </div>
             </div>
           </DrawerWrapper>
         );

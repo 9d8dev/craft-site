@@ -12,9 +12,9 @@ type CopyButtonProps = {
 const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, className }) => {
   const [copyStatus, setCopyStatus] = React.useState(
     <>
-      <span className="mr-1 sr-only text-sm">Copy Code</span>
+      <span className="sr-only mr-1 text-sm">Copy Code</span>
       <Copy className="w-4" />
-    </>
+    </>,
   );
 
   const handleCopy = async () => {

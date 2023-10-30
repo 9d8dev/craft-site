@@ -4,7 +4,7 @@ import Footer from "@/app/footer";
 
 export default function Home() {
   return (
-    <main suppressHydrationWarning className="grid md:gap-8 gap-6">
+    <main suppressHydrationWarning className="grid gap-6 md:gap-8">
       <Hero />
       <ComponentGrid />
       <Footer />

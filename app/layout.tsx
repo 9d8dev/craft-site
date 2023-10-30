@@ -18,11 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className="w-screen dark:bg-neutral-800 dark:text-neutral-50 font-light"
+      className="w-screen font-light dark:bg-neutral-800 dark:text-neutral-50"
       lang="en"
     >
       <Toaster position="bottom-center" />
-      <body className={`p-6 md:p-12 max-w-screen-2xl ${inter.className}`}>
+      <body className={`max-w-screen-2xl p-6 md:p-12 ${inter.className}`}>
         {children}
       </body>
     </html>

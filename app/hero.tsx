@@ -2,12 +2,12 @@ import { Info } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="grid md:gap-8 gap-6 py-16 md:py-24">
-      <p className="px-3 py-1 flex items-center gap-2 rounded-2xl bg-neutral-100 dark:bg-neutral-600 w-fit dark:text-neutral-200 text-xs">
+    <section className="grid gap-6 py-16 md:gap-8 md:py-24">
+      <p className="flex w-fit items-center gap-2 rounded-2xl bg-neutral-100 px-3 py-1 text-xs dark:bg-neutral-600 dark:text-neutral-200">
         <Info className="w-4" />
         Next JS Components for Landing Pages and Marketing Websites
       </p>
-      <h1 className="text-8xl font-serif">Welcome to Craft UI</h1>
+      <h1 className="font-serif text-8xl">Welcome to Craft UI</h1>
       <div className="grid gap-2">
         <h3 className="font-light">
           Craft UI is a component library for marketing websites built with
@@ -16,28 +16,28 @@ export default function Hero() {
         <h2 className="font-light">
           Craft UI was created by{" "}
           <a
-            className="underline underline-offset-4 hover:opacity-50 transition-all cursor-pointer"
+            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
             href="https://bridger.to"
           >
             Bridger Tower
           </a>{" "}
           and{" "}
           <a
-            className="underline underline-offset-4 hover:opacity-50 transition-all cursor-pointer"
+            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
             href="https://cameronyoungblood.com"
           >
             Cameron Youngblood
           </a>{" "}
           at{" "}
           <a
-            className="underline underline-offset-4 hover:opacity-50 transition-all cursor-pointer"
+            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
             href="https://9d8.dev"
           >
             9d8
           </a>{" "}
           and{" "}
           <a
-            className="underline underline-offset-4 hover:opacity-50 transition-all cursor-pointer"
+            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
             href="https://alpinecodex.com"
           >
             Alpine Codex

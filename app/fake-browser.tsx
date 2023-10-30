@@ -7,18 +7,18 @@ interface FakeBrowserProps {
 
 const FakeBrowser: React.FC<FakeBrowserProps> = ({ component }) => {
   return (
-    <div className="rounded-lg overflow-hidden flex flex-col h-[860px]">
+    <div className="flex h-[860px] flex-col overflow-hidden rounded-lg">
       {/* Fake Browser Top Bar */}
-      <div className="h-8 bg-neutral-500 flex justify-between items-center px-2">
+      <div className="flex h-8 items-center justify-between bg-neutral-500 px-2">
         <div className="flex gap-1">
-          <div className="bg-neutral-400 h-3 w-3 rounded-3xl"></div>
-          <div className="bg-neutral-400 h-3 w-3 rounded-3xl"></div>
-          <div className="bg-neutral-400 h-3 w-3 rounded-3xl"></div>
+          <div className="h-3 w-3 rounded-3xl bg-neutral-400"></div>
+          <div className="h-3 w-3 rounded-3xl bg-neutral-400"></div>
+          <div className="h-3 w-3 rounded-3xl bg-neutral-400"></div>
         </div>
         <X className="h-5 text-neutral-400" />
       </div>
       {/* This div acts like the screen */}
-      <div className="flex-grow overflow-y-auto h-full w-full">{component}</div>
+      <div className="h-full w-full flex-grow overflow-y-auto">{component}</div>
     </div>
   );
 };

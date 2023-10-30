@@ -19,19 +19,19 @@ const ComponentGrid = () => {
           >
             {/* Component Card */}
             <div className="grid gap-4 focus:ring-0">
-              <div className="relative rounded-lg h-fit group">
+              <div className="group relative h-fit rounded-lg">
                 <Image
                   src={component.image}
                   alt="Placeholder"
-                  className="rounded-md object-cover ring-neutral-500 ring-4"
+                  className="rounded-md object-cover ring-4 ring-neutral-500"
                   placeholder="blur"
                 />
                 <CopyButton
-                  className="group-hover:flex hidden z-50"
+                  className="z-50 hidden group-hover:flex"
                   textToCopy={componentCode}
                 />
               </div>
-              <div className="rounded-lg ring-neutral-200 dark:ring-neutral-700 ring-4 grid gap-4 p-4 bg-neutral-100 dark:bg-neutral-700">
+              <div className="grid gap-4 rounded-lg bg-neutral-100 p-4 ring-4 ring-neutral-200 dark:bg-neutral-700 dark:ring-neutral-700">
                 <h2 className="m-auto flex items-baseline gap-2 text-2xl">
                   {component.name}
                   <small className="text-xs text-neutral-800 dark:text-neutral-400">

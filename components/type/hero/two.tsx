@@ -46,10 +46,8 @@ const Two = () => {
         <div className="grid grid-cols-[1fr,2fr,1fr] items-center gap-6">
           <div className="overflow-hidden h-full">
             <Image
-              objectFit="cover"
-              objectPosition="center"
               src={Placeholder}
-              className="h-full"
+              className="h-full object-cover object-center"
               alt=""
               placeholder="blur"
             ></Image>
@@ -86,10 +84,8 @@ const Two = () => {
           </div>
           <div className="overflow-hidden h-full">
             <Image
-              objectFit="cover"
-              objectPosition="center"
               src={Placeholder}
-              className="h-full"
+              className="h-full object-cover object-center"
               alt=""
               placeholder="blur"
             ></Image>

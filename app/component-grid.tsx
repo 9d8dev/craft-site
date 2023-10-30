@@ -18,14 +18,12 @@ const ComponentGrid = () => {
             componentCode={componentCode}
           >
             {/* Component Card */}
-            <div className="grid gap-4 rounded-lg focus:ring-0">
-              <div className="relative h-48 group">
+            <div className="grid gap-4 focus:ring-0">
+              <div className="relative rounded-lg h-fit group">
                 <Image
-                  src="/placeholder.jpg"
-                  fill
+                  src={component.image}
                   alt="Placeholder"
-                  objectFit="cover"
-                  className="rounded-md"
+                  className="rounded-md object-cover"
                 />
                 <CopyButton
                   className="group-hover:flex hidden z-50"

@@ -8,10 +8,15 @@ import oneCode from "!!raw-loader!@/components/type/hero/one";
 import twoCode from "!!raw-loader!@/components/type/hero/two";
 import threeCode from "!!raw-loader!@/components/type/hero/three";
 
+// Component Image Imports
+import oneImage from "@/public/example/one.png";
+import twoImage from "@/public/example/two.png";
+
 export const components = [
   {
     name: "First Component",
     type: "Hero",
+    image: oneImage,
     component: One,
     componentCode: oneCode,
     description:
@@ -20,6 +25,7 @@ export const components = [
   {
     name: "Second Component",
     type: "Hero",
+    image: twoImage,
     component: Two,
     componentCode: twoCode,
     description:
@@ -28,6 +34,7 @@ export const components = [
   {
     name: "Third Component",
     type: "Hero",
+    image: oneImage,
     component: Three,
     componentCode: threeCode,
     description:

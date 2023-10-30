@@ -12,7 +12,7 @@ type CopyButtonProps = {
 const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, className }) => {
   const [copyStatus, setCopyStatus] = React.useState(
     <>
-      <span className="mr-1 text-sm">Copy Code</span>
+      <span className="mr-1 sr-only text-sm">Copy Code</span>
       <Copy className="w-4" />
     </>
   );
@@ -24,7 +24,8 @@ const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy, className }) => {
 
   return (
     <button
-      className={`min-w-30 absolute right-0 top-0 m-4 flex h-8 cursor-pointer items-center justify-center gap-1 rounded-md bg-neutral-500 px-2 py-1 transition-all hover:scale-95 focus:scale-110 ${className}`}
+      suppressHydrationWarning
+      className={`min-w-30 absolute right-0 top-0 m-4 flex h-8 cursor-pointer items-center justify-center gap-1 rounded-lg bg-neutral-600 px-2 py-1 transition-all hover:scale-95 focus:scale-110 ${className}`}
       onClick={(e) => {
         handleCopy();
         e.stopPropagation();

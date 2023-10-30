@@ -6,7 +6,7 @@ import Placeholder from "@/public/placeholder.jpg";
 
 const One = () => {
   return (
-    <section className="h-screen w-screen max-w-full grid gap-12 py-12 px-12 max-h-[1080px] dark:text-white bg-neutral-100 dark:bg-neutral-800">
+    <section className="h-full w-full max-w-full grid gap-12 py-12 px-12 max-h-[1080px] dark:text-white bg-neutral-100 dark:bg-neutral-800">
       <div className="w-full grid grid-cols-3">
         <h1 className="text-6xl font-light uppercase">One</h1>
         <h2 className="text-2xl font-extralight">

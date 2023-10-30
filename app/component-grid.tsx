@@ -24,6 +24,7 @@ const ComponentGrid = () => {
                   src={component.image}
                   alt="Placeholder"
                   className="rounded-md object-cover ring-neutral-500 ring-4"
+                  placeholder="blur"
                 />
                 <CopyButton
                   className="group-hover:flex hidden z-50"
@@ -33,7 +34,7 @@ const ComponentGrid = () => {
               <div className="rounded-lg ring-neutral-200 dark:ring-neutral-700 ring-4 grid gap-4 p-4 bg-neutral-100 dark:bg-neutral-700">
                 <h2 className="m-auto flex items-baseline gap-2 text-2xl">
                   {component.name}
-                  <small className="text-xs text-neutral-200 dark:text-neutral-400">
+                  <small className="text-xs text-neutral-800 dark:text-neutral-400">
                     {component.type}
                   </small>
                 </h2>

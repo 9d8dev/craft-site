@@ -1,7 +1,10 @@
+import { Info } from "lucide-react";
+
 export default function Hero() {
   return (
     <section className="grid md:gap-8 gap-6 py-16 md:py-24">
-      <p className="px-4 py-2 rounded-2xl bg-neutral-100 dark:bg-neutral-600 w-fit dark:text-neutral-200 text-xs">
+      <p className="px-3 py-1 flex items-center gap-2 rounded-2xl bg-neutral-100 dark:bg-neutral-600 w-fit dark:text-neutral-200 text-xs">
+        <Info className="w-4" />
         Next JS Components for Landing Pages and Marketing Websites
       </p>
       <h1 className="text-8xl font-serif">Welcome to Craft UI</h1>

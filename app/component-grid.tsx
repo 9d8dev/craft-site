@@ -43,9 +43,9 @@ const ComponentGrid = () => {
                     {component.type}
                   </small>
                 </h2>
-                <p className="m-auto w-3/4 text-neutral-500 dark:text-neutral-400">
+                {/* <p className="m-auto w-3/4 text-neutral-500 dark:text-neutral-400">
                   {component.description}
-                </p>
+                </p> */}
               </div>
             </div>
           </DrawerWrapper>

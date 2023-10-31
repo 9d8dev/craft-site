@@ -35,17 +35,12 @@ const ComponentGrid = () => {
                   className="z-50 hidden group-hover:flex"
                   textToCopy={componentCode}
                 />
-              </div>
-              <div className="grid gap-4 rounded-lg bg-neutral-100 p-4 ring-4 ring-neutral-200 dark:bg-neutral-700 dark:ring-neutral-700">
-                <h2 className="m-auto flex items-baseline gap-2 text-2xl">
+                <h2 className="absolute bottom-0 left-0 m-auto hidden w-full items-baseline gap-2 rounded-b-md bg-neutral-300/40 p-2 text-2xl backdrop-blur-md group-hover:flex">
                   {component.name}
                   <small className="text-xs text-neutral-800 dark:text-neutral-400">
                     {component.type}
                   </small>
                 </h2>
-                {/* <p className="m-auto w-3/4 text-neutral-500 dark:text-neutral-400">
-                  {component.description}
-                </p> */}
               </div>
             </div>
           </DrawerWrapper>

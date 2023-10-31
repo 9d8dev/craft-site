@@ -15,7 +15,7 @@ import threeImage from '@/public/example/three.png';
 
 export const components = [
 	{
-		name: 'First Component',
+		name: 'Hero 001',
 		type: 'Hero',
 		image: oneImage,
 		component: One,
@@ -23,7 +23,7 @@ export const components = [
 		description: 'This is a test component for the setup of the Craft UI library'
 	},
 	{
-		name: 'Second Component',
+		name: 'Hero 002',
 		type: 'Hero',
 		image: twoImage,
 		component: Two,
@@ -31,7 +31,7 @@ export const components = [
 		description: 'This is a test component for the setup of the Craft UI library'
 	},
 	{
-		name: 'Third Component',
+		name: 'Hero 003',
 		type: 'Hero',
 		image: threeImage,
 		component: Three,

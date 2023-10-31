@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+// Import Your Large Text Here
 import Logo from '@/public/logo.svg';
 import { ArrowTopRightIcon, PersonIcon } from '@radix-ui/react-icons';
 

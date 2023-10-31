@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
 import React from "react";
 import { Drawer } from "vaul";
-import { X } from "lucide-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import CopyButton from "./copy-button";

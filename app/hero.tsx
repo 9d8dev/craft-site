@@ -2,7 +2,7 @@ import { Info, Mail } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="grid gap-6 py-16 md:gap-8 md:py-24">
+    <section className="grid gap-6 py-8 md:gap-8 md:py-12">
       <p className="flex w-fit items-center gap-2 rounded-2xl bg-neutral-100 px-3 py-1 text-xs dark:bg-neutral-600 dark:text-neutral-200">
         <Info className="w-4" />
         Next JS Components for Landing Pages and Marketing Websites

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <section className="grid gap-6 py-16 md:gap-8 md:py-24">
+    <section className="grid gap-6 py-8 md:gap-8 md:py-12">
       <p>
         Visit the{" "}
         <a

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 
 // Import your hero image here
 import Placeholder from "@/public/placeholder.jpg";
@@ -8,29 +8,29 @@ const Two = () => {
   return (
     <section className="h-full w-full relative flex items-center justify-center gap-8 dark:text-white bg-neutral-100 dark:bg-neutral-800">
       <nav className="w-full absolute top-0 p-8 grid items-center grid-cols-[1fr,2fr,1fr]">
-        <Link href="#" className="text-xl font-light">
+        <a href="#" className="text-xl font-light">
           Two
-        </Link>
+        </a>
         <ul className="flex justify-center gap-4">
           <li>
-            <Link className="hover:opacity-50 transition-all" href="#">
+            <a className="hover:opacity-50 transition-all" href="#">
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="hover:opacity-50 transition-all" href="#">
+            <a className="hover:opacity-50 transition-all" href="#">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="hover:opacity-50 transition-all" href="#">
+            <a className="hover:opacity-50 transition-all" href="#">
               Services
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="hover:opacity-50 transition-all" href="#">
+            <a className="hover:opacity-50 transition-all" href="#">
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
         <div className="flex justify-end">

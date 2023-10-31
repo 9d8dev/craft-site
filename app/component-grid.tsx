@@ -10,8 +10,13 @@ const ComponentGrid = () => {
       {components.map((component, index) => {
         const Component = component.component;
         const componentCode = component.componentCode;
+        // Generate a unique ID by creating a slug from the component's name
+        const slugId = `component-${component.name
+          .toLowerCase()
+          .replace(/ /g, "-")}`;
         return (
           <DrawerWrapper
+            id={slugId}
             key={index}
             name={component.name}
             component={<Component />}
@@ -22,7 +27,7 @@ const ComponentGrid = () => {
               <div className="group relative h-fit rounded-lg">
                 <Image
                   src={component.image}
-                  alt="Placeholder"
+                  alt={component.name}
                   className="rounded-md object-cover ring-4 ring-neutral-500"
                   placeholder="blur"
                 />

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Drawer } from "vaul";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -12,6 +12,7 @@ type Props = {
   name: string;
   component: React.ReactNode;
   componentCode: string;
+  id?: string;
 };
 
 const DrawerWrapper: React.FC<Props> = ({
@@ -19,11 +20,35 @@ const DrawerWrapper: React.FC<Props> = ({
   name,
   component,
   componentCode,
+  id,
 }) => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  // Effect to handle the URL hash when the drawer's open state changes
+  useEffect(() => {
+    if (isDrawerOpen && id) {
+      // Set the URL hash to the id when the drawer opens
+      window.history.pushState(null, "", `#${id}`);
+    } else {
+      // Remove the hash when the drawer closes
+      window.history.pushState(null, "", window.location.pathname);
+    }
+  }, [isDrawerOpen, id]);
+
+  // Effect to scroll to the component if the URL hash matches the id
+  useEffect(() => {
+    if (id && window.location.hash === `#${id}`) {
+      document.getElementById(id)?.scrollIntoView();
+    }
+  }, [id]);
+
   return (
-    <Drawer.Root>
+    <Drawer.Root open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
       <Drawer.Trigger asChild>
-        <button className="group flex w-fit gap-px outline-none transition-all hover:-mt-1 hover:mb-1">
+        <button
+          className="group flex w-fit gap-px outline-none transition-all hover:-mt-1 hover:mb-1"
+          id={id}
+        >
           {children}
         </button>
       </Drawer.Trigger>

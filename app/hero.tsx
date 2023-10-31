@@ -1,4 +1,4 @@
-import { Info } from "lucide-react";
+import { Info, Mail } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -44,6 +44,12 @@ export default function Hero() {
           </a>
           .
         </h2>
+        <a
+          className="mt-8 flex w-fit items-center gap-1 border py-1 pl-1 pr-2 hover:bg-white hover:text-neutral-700"
+          href="#tally-open=n08R86&tally-emoji-text=👋&tally-emoji-animation=wave"
+        >
+          <Mail className="h-4" /> Subscribe for Updates
+        </a>
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const pageContent = {
 
 const Four = () => {
   return (
-    <section className="w-full h-full bg-neutral-200 dark:bg-neutral-900">
+    <section className="w-full h-full max-h-full overflow-hidden bg-neutral-200 dark:bg-neutral-900">
       {/* Navigation Menu */}
       <nav className="sticky top-0 grid w-full grid-cols-[1fr,2fr,1fr] items-center p-8 backdrop-blur-md">
         <a href={pageContent.nav[0].url} className="text-xl font-light">
@@ -40,7 +40,7 @@ const Four = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="w-full h-full m-auto max-w-5xl p-6 flex flex-col gap-8">
+      <div className="w-full h-full m-auto max-w-5xl py-10 px-6 flex flex-col gap-8">
         {/* Large Text */}
         <h1 className="text-7xl font-normal tracking-tight">
           Four is a component{" "}

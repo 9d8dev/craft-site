@@ -1,13 +1,13 @@
-import Three from '@/components/type/hero/three';
+import Four from "@/components/type/hero/four";
 
 export default function Playground() {
-	return (
-		<section className="fixed left-0 right-0 top-0 h-screen w-screen overflow-scroll">
-			<Three />
+  return (
+    <section className="fixed left-0 right-0 top-0 h-screen w-screen overflow-scroll">
+      <Four />
 
-			<div className="p-12">
-				<p>This is an example second section.</p>
-			</div>
-		</section>
-	);
+      <div className="p-12">
+        <p>This is an example second section.</p>
+      </div>
+    </section>
+  );
 }

@@ -22,6 +22,14 @@ const Five = () => {
           Get in Touch
         </a>
 
+        {/* link top left */}
+        <a
+          className="hover:underline underline-offset-4 transition-all text-xs absolute top-2 left-2"
+          href="#"
+        >
+          Five
+        </a>
+
         {/* XL Text */}
         <h1 className="text-9xl font-medium">
           <span>Craft UI is for</span> <span>Marketing</span>{" "}

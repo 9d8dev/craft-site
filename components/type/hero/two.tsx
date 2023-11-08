@@ -28,7 +28,7 @@ const pageContent = {
 
 const Two = () => {
   return (
-    <section className="relative flex h-full w-full items-center justify-center gap-8 bg-neutral-100 dark:bg-neutral-800 dark:text-white">
+    <section className="relative flex h-full w-full items-center justify-center gap-8 bg-neutral-100 dark:bg-neutral-900 dark:text-white">
       <nav className="absolute top-0 grid w-full grid-cols-[1fr,2fr,1fr] items-center p-8">
         <a href={pageContent.nav[0].url} className="text-xl font-light">
           {pageContent.nav[0].name}

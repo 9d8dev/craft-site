@@ -3,18 +3,21 @@ import One from "@/components/type/hero/one";
 import Two from "@/components/type/hero/two";
 import Three from "@/components/type/hero/three";
 import Four from "@/components/type/hero/four";
+import Five from "@/components/type/hero/five";
 
 // Component Code Imports
 import oneCode from "!!raw-loader!@/components/type/hero/one";
 import twoCode from "!!raw-loader!@/components/type/hero/two";
 import threeCode from "!!raw-loader!@/components/type/hero/three";
 import fourCode from "!!raw-loader!@/components/type/hero/four";
+import fiveCode from "!!raw-loader!@/components/type/hero/five";
 
 // Component Image Imports
 import oneImage from "@/public/example/one.png";
 import twoImage from "@/public/example/two.png";
 import threeImage from "@/public/example/three.png";
 import fourImage from "@/public/example/four.png";
+import fiveImage from "@/public/example/five.png";
 
 export const components = [
   {
@@ -50,6 +53,15 @@ export const components = [
     image: fourImage,
     component: Four,
     componentCode: fourCode,
+    description:
+      "This is a test component for the setup of the Craft UI library",
+  },
+  {
+    name: "Hero 005",
+    type: "Hero",
+    image: fiveImage,
+    component: Five,
+    componentCode: fiveCode,
     description:
       "This is a test component for the setup of the Craft UI library",
   },

@@ -16,7 +16,7 @@ const content = {
 
 const One = () => {
   return (
-    <section className="grid h-full max-h-[1080px] w-full max-w-full gap-12 bg-neutral-100 px-12 py-12 dark:bg-neutral-800 dark:text-white">
+    <section className="grid h-full max-h-[1080px] w-full max-w-full gap-12 bg-neutral-100 px-12 py-12 dark:bg-neutral-900 dark:text-white">
       <div className="grid w-full grid-cols-3">
         <h1 className="text-6xl font-light uppercase">{content.title}</h1>
         <h2 className="text-2xl font-extralight">{content.subText}</h2>

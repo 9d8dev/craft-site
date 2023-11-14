@@ -18,7 +18,7 @@ const FakeBrowser: React.FC<FakeBrowserProps> = ({ component }) => {
         <X className="h-5 text-neutral-400" />
       </div>
       {/* This div acts like the screen */}
-      <div className="h-full w-full flex-grow overflow-y-auto">{component}</div>
+      <div className="h-full w-full flex-grow overflow-hidden">{component}</div>
     </div>
   );
 };

@@ -11,10 +11,10 @@ const Section = ({
   children,
   isAlt,
   className,
-  bgColor = "bg-secondary-300 dark:bg-secondary-900",
+  bgColor = "bg-neutral-300 dark:bg-neutral-900",
 }: SectionProps) => {
   const backgroundColor = isAlt
-    ? "bg-secondary-200 dark:bg-secondary-700"
+    ? "bg-neutral-200 dark:bg-neutral-700"
     : bgColor;
 
   return (

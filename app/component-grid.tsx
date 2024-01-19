@@ -30,18 +30,16 @@ const ComponentGrid = () => {
                   <Image
                     src={component.image}
                     alt={component.name}
-                    className="rounded-md object-cover ring-4 ring-neutral-500"
+                    className="rounded-md object-cover ring-4 ring-secondary"
                     placeholder="blur"
                   />
                   <CopyButton
-                    className="z-50 hidden group-hover:flex"
+                    className="z-50 hidden shadow-sm border group-hover:flex"
                     textToCopy={componentCode}
                   />
                   <h2 className="absolute bottom-0 left-0 m-auto hidden w-full items-baseline gap-2 rounded-b-md bg-neutral-300/40 p-2 text-2xl backdrop-blur-md group-hover:flex">
                     {component.name}
-                    <small className="text-xs text-neutral-800 dark:text-neutral-400">
-                      {component.type}
-                    </small>
+                    <small className="text-xs">{component.type}</small>
                   </h2>
                 </div>
               </div>

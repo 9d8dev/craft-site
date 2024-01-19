@@ -1,4 +1,5 @@
 import Image from "next/image";
+import * as Craft from "@/components/craft/layout";
 
 // Import your hero image here
 import Placeholder from "@/public/placeholder.jpg";
@@ -28,30 +29,8 @@ const pageContent = {
 
 const Two = () => {
   return (
-    <section className="relative flex h-full w-full items-center justify-center gap-8 bg-neutral-100 dark:bg-neutral-900 dark:text-white">
-      <nav className="absolute top-0 grid w-full grid-cols-[1fr,2fr,1fr] items-center p-8">
-        <a href={pageContent.nav[0].url} className="text-xl font-light">
-          {pageContent.nav[0].name}
-        </a>
-        <ul className="flex justify-center gap-4">
-          {pageContent.nav.slice(1).map((link, index) => (
-            <li key={index}>
-              <a className="transition-all hover:opacity-50" href={link.url}>
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="flex justify-end">
-          <a
-            className="h-fit w-fit bg-neutral-300 px-4 py-2 text-black transition-all hover:-mt-1 hover:mb-1 focus:scale-105 dark:bg-neutral-300"
-            href={pageContent.banner.links[0].url}
-          >
-            {pageContent.banner.links[0].name}
-          </a>
-        </div>
-      </nav>
-      <div>
+    <Craft.Section>
+      <Craft.Container className="max-w-screen">
         <div className="grid grid-cols-[1fr,2fr,1fr] items-center gap-6">
           <div className="h-full overflow-hidden">
             <Image
@@ -100,8 +79,8 @@ const Two = () => {
             ></Image>
           </div>
         </div>
-      </div>
-    </section>
+      </Craft.Container>
+    </Craft.Section>
   );
 };
 

@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster, toast } from "sonner";
-import Script from "next/script";
+import * as Craft from "@/components/craft/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,17 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      className="w-screen font-light dark:bg-neutral-800 dark:text-neutral-50"
-      lang="en"
-    >
-      <head>
-        <Script src="https://tally.so/widgets/embed.js"></Script>
-      </head>
+    <Craft.Layout>
+      {children}\
       <Toaster position="bottom-center" />
-      <body className={`max-w-screen-2xl p-6 md:p-12 ${inter.className}`}>
-        {children}
-      </body>
-    </html>
+    </Craft.Layout>
   );
 }

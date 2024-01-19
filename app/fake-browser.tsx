@@ -7,9 +7,9 @@ interface FakeBrowserProps {
 
 const FakeBrowser: React.FC<FakeBrowserProps> = ({ component }) => {
   return (
-    <div className="flex h-[860px] flex-col overflow-hidden rounded-lg">
+    <div className="flex h-[860px] border drop-shadow-sm flex-col overflow-hidden rounded-lg">
       {/* Fake Browser Top Bar */}
-      <div className="flex h-8 items-center justify-between bg-neutral-500 px-2">
+      <div className="flex h-8 items-center justify-between bg-neutral-200 dark:bg-neutral-700 px-2">
         <div className="flex gap-1">
           <div className="h-3 w-3 rounded-3xl bg-neutral-400"></div>
           <div className="h-3 w-3 rounded-3xl bg-neutral-400"></div>

@@ -1,4 +1,7 @@
 import { Info, Mail } from "lucide-react";
+import { Instrument_Serif } from "next/font/google";
+
+const font = Instrument_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Hero() {
   return (
@@ -7,40 +10,26 @@ export default function Hero() {
         <Info className="w-4" />
         Next JS Components for Landing Pages and Marketing Websites
       </p>
-      <h1 className="font-serif text-8xl">Welcome to Craft UI</h1>
-      <div className="grid gap-2">
+      <h1 className={font.className}>Craft UI Components</h1>
+      <div className="grid not-prose gap-2">
         <h3 className="font-light">
-          Craft UI is a component library for marketing websites built with
-          React, Typescript, Next JS, and Tailwind CSS.
+          <a
+            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
+            href="https://github.com/9d8dev/craft"
+          >
+            Craft UI
+          </a>{" "}
+          is a component library for marketing websites built with React,
+          Typescript, Next JS, and Tailwind CSS.
         </h3>
         <h2 className="font-light">
-          Craft UI was created by{" "}
+          Below is a collection of components build with Craft UI and shadcn/ui
+          created by{" "}
           <a
             className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
             href="https://bridger.to"
           >
             Bridger Tower
-          </a>{" "}
-          and{" "}
-          <a
-            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
-            href="https://cameronyoungblood.com"
-          >
-            Cameron Youngblood
-          </a>{" "}
-          at{" "}
-          <a
-            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
-            href="https://9d8.dev"
-          >
-            9d8
-          </a>{" "}
-          and{" "}
-          <a
-            className="cursor-pointer underline underline-offset-4 transition-all hover:opacity-50"
-            href="https://alpinecodex.com"
-          >
-            Alpine Codex
           </a>
           .
         </h2>

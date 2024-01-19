@@ -59,7 +59,7 @@ const Six = () => {
         </div>
 
         {/* Circle CTA */}
-        <div className="absolute bottom-2 right-2 h-12 w-12 bg-neutral-500 p-12 flex items-center justify-center rounded-full hover:opacity-70 -rotate-45 text-center leading-4 font-medium transition-all">
+        <div className="absolute bottom-2 right-2 h-12 w-12 bg-background p-12 flex items-center justify-center rounded-full hover:opacity-80 text-center leading-4 font-medium transition-all">
           <Link className="-mt-1" href="#">
             Get Started
           </Link>

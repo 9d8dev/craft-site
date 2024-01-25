@@ -29,10 +29,10 @@ const pageContent = {
 
 const Two = () => {
   return (
-    <Craft.Section>
-      <Craft.Container className="max-w-screen">
-        <div className="grid grid-cols-[1fr,2fr,1fr] items-center gap-6">
-          <div className="h-full overflow-hidden">
+    <Craft.Section className="h-full">
+      <Craft.Container className="max-w-screen h-full p-0 md:p-0">
+        <div className="grid grid-cols-[1fr,2fr,1fr] h-full items-center gap-6">
+          <div className="h-full flex items-center justify-center overflow-hidden">
             <Image
               src={pageContent.images[0]}
               className="h-full object-cover object-center"
@@ -57,7 +57,7 @@ const Two = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 "
+                  className="w-full px-4 py-2 border"
                   placeholder={pageContent.banner.form.inputPlaceholder}
                 />
                 <button

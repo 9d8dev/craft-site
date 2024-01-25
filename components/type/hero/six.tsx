@@ -1,5 +1,4 @@
-import Section from "@/components/layout/section";
-import Container from "@/components/layout/container";
+import * as Craft from "@/components/craft/layout";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,8 +7,8 @@ import Placeholder from "@/public/placeholder.jpg";
 
 const Six = () => {
   return (
-    <Section className="h-full w-full relative">
-      <Container>
+    <Craft.Section className="h-full w-full relative">
+      <Craft.Container>
         {/* Name and Nav */}
         <div className="w-full flex justify-between">
           <div className="">
@@ -64,8 +63,8 @@ const Six = () => {
             Get Started
           </Link>
         </div>
-      </Container>
-    </Section>
+      </Craft.Container>
+    </Craft.Section>
   );
 };
 

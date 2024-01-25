@@ -21,7 +21,7 @@ const content = {
 
 const Three = () => {
   return (
-    <section className="relative flex h-full w-full flex-col justify-between bg-neutral-200 p-2 dark:bg-neutral-900 ">
+    <section className="relative flex h-full w-full flex-col justify-between p-2">
       <div className="flex flex-col gap-4">
         {/* Navigation Menu */}
         <nav className="sticky top-0 text-sm uppercase">

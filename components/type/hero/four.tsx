@@ -14,7 +14,7 @@ const pageContent = {
 
 const Four = () => {
   return (
-    <section className="w-full h-full max-h-full overflow-hidden bg-neutral-200 dark:bg-neutral-900">
+    <section className="w-full h-full max-h-full overflow-hidden">
       {/* Navigation Menu */}
       <nav className="sticky top-0 grid w-full grid-cols-[1fr,2fr,1fr] items-center p-8 backdrop-blur-md">
         <a href={pageContent.nav[0].url} className="text-xl font-light">

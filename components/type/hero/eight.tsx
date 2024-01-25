@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "@/public/logo.svg";
 import LogoLightMode from "@/public/logo_light_bg.svg";
 import Balancer from "react-wrap-balancer";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { Camera } from "lucide-react";
 
 const Hero = () => {
@@ -17,13 +17,6 @@ const Hero = () => {
           height={100}
           alt="Presets.com Logo"
           className="hidden dark:block not-prose"
-        ></Image>
-        <Image
-          src={LogoLightMode}
-          className="dark:hidden not-prose"
-          width={300}
-          height={100}
-          alt="Presets.com Logo"
         ></Image>
         <h1 className="!mb-0">
           <Balancer>

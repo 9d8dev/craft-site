@@ -54,9 +54,9 @@ const DrawerWrapper: React.FC<Props> = ({
       </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/40 " />
-        <Drawer.Content className="fixed bottom-0 left-0 right-0 flex h-[96%] flex-col rounded-t-lg bg-neutral-100 dark:bg-neutral-700">
+        <Drawer.Content className="fixed bottom-0 left-0 right-0 flex h-[96%] flex-col rounded-t-lg bg-secondary">
           <div className="mx-auto my-4 h-1.5 w-16 flex-shrink-0 rounded-full bg-zinc-300" />
-          <div className="flex-1 flex-grow overflow-y-auto rounded-t-[10px] bg-neutral-50 p-4 dark:bg-neutral-700">
+          <div className="flex-1 flex-grow overflow-y-auto rounded-t-[10px] bg-secondary">
             <div className="mx-auto max-w-6xl flex-grow">
               <Drawer.Title className="mb-4 font-medium">{name}</Drawer.Title>
               <FakeBrowser component={component} />
